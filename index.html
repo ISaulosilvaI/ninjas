@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ninjas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,700;1,400&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/flex.css">
+    <link rel="stylesheet" href="./assets/style/grid.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="./assets/image/konora.png"
+      type="Logo do pais do fogo"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="menu">
+          <li class="menu__item">
+            <a href="https://naruto.fandom.com/pt-br/wiki/Categoria:Categorias_da_Wiki_Naruto">Ninjas</a>
+          </li>
+          <li class="menu__item">
+            <a href="https://naruto.fandom.com/pt-br/wiki/Categoria:Vilas">Aldeia</a>
+          </li>
+          <li class="menu__item">
+            <a href="https://naruto.fandom.com/pt-br/wiki/Kekkei_Genkai">Kekkei Genkai</a>
+          </li>
+          <li class="menu__item menu__pesquisar">
+            <label for="pesquisa" class="menu__label"
+              ><input
+                type="search"
+                name=""
+                placeholder="Procure pelo ninja"
+                id="pesquisar"
+                class="menu__input"
+            /></label>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="principal">
+      <section class="banner">
+        <img src="./assets/image/cena-1.jpeg" alt="Imagem do sasuke" />
+        <img src="./assets/image/cena-2.jpeg" alt="Imagem de sishui" />
+        <img src="./assets/image/cena-3.jpeg" alt="Imagem de itachi" />
+        <img src="./assets/image/cena-4.jpeg" alt="Imagem de madara" />
+      </section>
+
+      <section class="aldeias">
+        <h2 class="aldeias__titulo">Aldeias</h2>
+        <ul class="aldeias__lista">
+          <li class="aldeias__item Konoha">Konoha</li>
+          <li class="aldeias__item Kirigakure">Kirigakure</li>
+          <li class="aldeias__item Pais__do__ferro">País do ferro</li>
+          <li class="aldeias__item Sunagakure">Sunagakure</li>
+          <li class="aldeias__item Takigakure">Takigakure</li>
+          <li class="aldeias__item Kumogakre">Kumogakre</li>
+          <li class="aldeias__item Otogakure">Otogakure</li>
+          <li class="aldeias__item Amegakure">Amegakure</li>
+        </ul>
+        <div class="aldeias__destaques">
+          <div class="destaques">
+            <h3 class="destaque__titulo">Destaques:</h3>
+            <div class="destaques__barra"></div>
+          </div>
+        </div>
+        <div class="aldeias__imagem"></div>
+      </section>
+
+      <section class="favoritos">
+        <h2 class="favoritos__titulo">Ninjas favoritos</h2>
+        <ul class="favoritos__lista">
+            <li class="favoritos__item">
+                <img src="./assets/image/kakashi.jpeg" alt="kakashi com espada">
+                <h3>Kakashi Hatake</h3>
+                <h4>Classificação: Anbu, Kage</h4>
+                <h5>Habilidade: o Raikiri</h5>
+                <a href="https://naruto.fandom.com/pt-br/wiki/Kakashi_Hatake?so=search"><button>Ver mais</button></a>
+            </li>
+            <li class="favoritos__item">
+                <img src="./assets/image/madara.jpeg" alt="Madara reanimado">
+                <h3>Madara Uchiha</h3>
+                <h4>Classificação: Nukenin, Tipo Sensor</h4>
+                <h5>Habilidade:  Kekkei Genkai, Estilo Fogo, Susanoo Completo, Modo Eremita, Eremita dos Seis Caminhos</h5>
+                <a href="https://naruto.fandom.com/pt-br/wiki/Madara_Uchiha?so=search"><button>Ver mais</button></a>
+            </li>
+            <li class="favoritos__item">
+                <img src="./assets/image/hashirama.jpeg" alt="Hashirama usando clones de Madeira">
+                <h3>Hashirama Senju</h3>
+                <h4>Classificação: Eremita, Kage</h4>
+                <h5>Habilidade: Estilo Madeira</h5>
+                <a href="https://naruto.fandom.com/pt-br/wiki/Hashirama_Senju?so=search"><button>Ver mais</button></a>
+            </li>
+            <li class="favoritos__item">
+                <img src="./assets/image/neji.jpeg" alt="Neji na guerra">
+                <h3>Neji Hyūga</h3>
+                <h4>Classificação: Chūnin</h4>
+                <h5>Habilidade: Byakugan,  Oito Trigramas-Sessenta e Quatro Palmas</h5>
+                <a href="https://naruto.fandom.com/pt-br/wiki/Neji_Hy%C5%ABga?so=search"><button>Ver mais</button></a>
+            </li>
+            <li class="favoritos__item">
+                <img src="./assets/image/Jiraiya.jpeg" alt="Jiraiya modo senin">
+                <h3>Jiraiya</h3>
+                <h4>Classificação: Eremita</h4>
+                <h5>Habilidade: Modo Eremita,  Técnica de Manipulação da Sombra do Sapo Achatado</h5>
+                <a href="https://naruto.fandom.com/pt-br/wiki/Jiraiya?so=search"><button>Ver mais</button></a>
+            </li>
+            <li class="favoritos__item">
+                <img src="./assets/image/itachi.jpeg" alt="Itachi clã ">
+                <h3>Itachi Uchiha</h3>
+                <h4>Classificação: Anbu, Rank S, Nukenin</h4>
+                <h5>Habilidade: Estilo Fogo, Tsukuyomi, Susanoo completo com Espada de Totsuka e Espelho de Yata, shurikenjutsu</h5>
+                <a href="https://naruto.fandom.com/pt-br/wiki/Itachi_Uchiha?so=search"><button>Ver mais</button></a>
+            </li>
+            <li class="favoritos__item hina">
+                <img src="./assets/image/orotimaru.jpeg" alt="orotimaru jovem">
+                <h3>Orochimaru</h3>
+                <h4>Classificação: Anbu, Nukenin, Rank S, Chefe de Aldeia</h4>
+                <h5>Habilidade:  Invocação: Reencarnação nas Terras Impuras, Poder da Cobra Branca,  Mãos de Múltiplas Serpentes Ocultas na Sombra</h5>
+                <a href="https://naruto.fandom.com/pt-br/wiki/Orochimaru?so=search"><button>Ver mais</button></a>
+            </li>
+            <li class="favoritos__item">
+              <img src="./assets/image/sishui.jpeg" alt="Shisui arco dois irmões">
+              <h3>Shisui Uchiha</h3>
+              <h4>Classificação: Anbu</h4>
+              <h5>Habilidade:  Estilo Fogo: Técnica da Grande Bola de Fogo,  Kotoamatsukami, Susanoo</h5>
+              <a href="https://naruto.fandom.com/pt-br/wiki/Shisui_Uchiha?so=search"><button>Ver mais</button></a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="ninja">
+        <h2 class="ninja__titulo">Outros Ninjas!!</h2>
+        <ul class="ninja__lista">
+            <li class="ninja__item">
+                <img src="./assets/image/hinata.jpeg" alt="Hinata envergonhada ">
+                <div class="ninja__informacoes">
+                    <h3>Hinata Hyūga</h3>
+                    <h4>Classificação: Herdeira do clã Hyūga</h4>
+                    <h5>Registro Ninja: 012612</h5>
+                </div>
+                <div class="ninja__feito">
+                    <h6>Em missões oficiais, ela finalizou 33 no total: 10 Rank D, 14 Rank C, 8 Rank B, 1 Rank A, 0 Rank S.</h6>
+                    <a href="https://naruto.fandom.com/pt-br/wiki/Hinata_Hy%C5%ABga"><button>Ver mais</button></a>
+                </div>
+            </li>
+            <li class="ninja__item">
+                <img src="./assets/image/sasuke.jpeg" alt="sasuke com Susanoo">
+                <div class="ninja__informacoes">
+                    <h3>Sasuke Uchiha</h3>
+                    <h4>Classificação: Nukenin, Tipo Sensor<h4>
+                    <h5>Registro Ninja: 012606</h5>
+                </div>
+                <div class="ninja__feito">
+                    <h6>Sasuke completou 16 missões oficiais no total: 7 rank D, 1 rank C, 2 rank B, 6 rank A, 0 rank S.</h6>
+                    <a href="https://naruto.fandom.com/pt-br/wiki/Sasuke_Uchiha?so=search"><button>Ver mais</button></a>
+                </div>
+            </li>
+            <li class="ninja__item">
+                <img src="./assets/image/sakura.jpeg" alt="sakura guerra">
+                <div class="ninja__informacoes">
+                    <h3>Sakura Haruno</h3>
+                    <h4>Classificação: Ninja Médico<h4>
+                    <h5>Registro Ninja: 012601</h5>
+                </div>
+                <div class="ninja__feito">
+                    <h6>Sakura completou 34 missões oficiais no total: 12 rank D, 9 rank C, 6 rank B, 7 rank A, 0 rank S.</h6>
+                    <a href="https://naruto.fandom.com/pt-br/wiki/Sakura_Haruno?so=search"><button>Ver mais</button></a>
+                </div>
+            </li>
+            <li class="ninja__item">
+                <img src="./assets/image/shikuamaru.jpeg" alt="shikuamaru guerra">
+                <div class="ninja__informacoes">
+                    <h3>Shikamaru Nara</h3>
+                    <h4>Classificação: Líder do clã Nara, Conselheiro do Sétimo Hokage<h4>
+                    <h5>Registro Ninja: 012611</h5>
+                </div>
+                <div class="ninja__feito">
+                    <h6>Shikamaru completou 39 missões oficiais no total: 8 rank D, 3 rank C, 9 rank B, 19 rank A, 0 rank S.</h6>
+                    <a href="https://naruto.fandom.com/pt-br/wiki/Shikamaru_Nara?so=search"><button>Ver mais</button></a>
+                </div>
+            </li>
+            <li class="ninja__item">
+                <img src="./assets/image/sishui.jpeg" alt="shikuamaru guerra">
+                <div class="ninja__informacoes">
+                    <h3>Shisui Uchiha</h3>
+                    <h4>Classificação: Anbu<h4>
+                    <h5>Registro Ninja: Konohagakure</h5>
+                </div>
+                <div class="ninja__feito">
+                    <h6>O uso de Shisui da Técnica do Deslocamento Instantâneo.</h6>
+                    <a href="https://naruto.fandom.com/pt-br/wiki/Shisui_Uchiha?so=search"><button>Ver mais</button></a>
+                </div>
+            </li>
+            <li class="ninja__item">
+                <img src="./assets/image/naruto.jpeg" alt="shikuamaru guerra">
+                <div class="ninja__informacoes">
+                    <h3>Naruto Uzumaki</h3>
+                    <h4>Classificação: Jinchūriki, Eremita, Tipo Sensor, Kage<h4>
+                    <h5>Registro Ninja: 012607</h5>
+                </div>
+                <div class="ninja__feito">
+                    <h6>Naruto completou 16 missões oficiais no total: 7 Rank D, 1 Rank C, 2 Rank B, 6 Rank A, 0 Rank S.</h6>
+                    <a href="https://naruto.fandom.com/pt-br/wiki/Naruto_Uzumaki?so=search"><button>Ver mais</button></a>
+                </div>
+            </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="rodape">
+        <ul class="rodape__lista">
+            <li><h3 class="rodape__titulo">Clãs e Famílias</h3></li>
+            <li>Clã Ōtsutsuki</li>
+            <li>Clã Uzumaki</li>
+            <li>Clã Senju</li>
+            <li>Clã Uchiha</li>
+            <li>Clã Yamanaka</li>
+            <li>Clã Aburame</li>
+        </ul>
+        <ul class="rodape__lista">
+            <li><h3 class="rodape__titulo">Kekkei Genkai</h3></li>
+            <li>Sharingan</li>
+            <li>Byakugan</li>
+            <li>Estilo Madeira</li>
+            <li>Estilo Cristal</li>
+            <li>Estilo Magnetismo</li>
+        </ul>
+        <ul class="rodape__lista">
+            <li><h3 class="rodape__titulo">Países</h3></li>
+            <li>País do Fogo</li>
+            <li>País do Relâmpago</li>
+            <li>País do Vento</li>
+            <li>País da Água</li>
+            <li>País do Som</li>
+            <li>País da Lua</li>
+        </ul>
+        <div class="rodape__logo">
+            <h4></h4>
+            <p>Desenvolvido por Saulo.</p>
+        </div>
+    </footer>
+  </body>
+</html>

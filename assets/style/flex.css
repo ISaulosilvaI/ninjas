@@ -1,0 +1,119 @@
+/* cabecalho */
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 33px;
+}
+
+/* aldeias */
+.aldeias__lista{
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+
+/* destaque */
+.destaque{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.destaques__barra{
+    flex-grow: 1;
+}
+
+/* favoritos */
+.favoritos__lista{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+    row-gap: 1rem;
+    justify-content: center;
+}
+
+.favoritos__item{
+    flex-grow: 1;
+    max-width: 400px;
+}
+
+/* ninjas */
+.ninja__lista{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+    row-gap: 1rem;
+    justify-content: center;
+}
+
+.ninja__item{
+    flex-grow: 1;
+}
+
+/* rodape */
+.rodape{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.rodape__logo{
+    align-self: end;
+}
+
+@media (min-width: 720px) {
+    /* cabecalho */
+    .menu{
+        column-gap: 75px;
+    }
+
+    /* aldeias */
+    .aldeias__lista{
+        flex-wrap: wrap;
+        column-gap: 1.5rem;
+        row-gap: 1rem;
+    }
+
+    /* favoritos */
+    .favoritos__lista{
+        justify-content: end;
+    }
+
+    /* ninjas */
+    .ninja__lista{
+        justify-content: end;
+    }
+}
+
+@media (min-width: 1440px) {
+    .menu{
+        column-gap: 105px;
+        flex-wrap: nowrap;
+    }
+
+    .menu__item:nth-child(1){
+        order: 1;
+    }
+
+    .menu__item:nth-child(2){
+        order: 3;
+    }
+
+    .menu__item:nth-child(3){
+        order: 4;
+    }
+
+    .menu__item:nth-child(4){
+        order: 5;
+    }
+
+    .menu__item:nth-child(5){
+        order: 2;
+    }
+
+    .ninja__lista{
+        justify-content: center;
+    }
+}

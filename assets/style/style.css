@@ -1,0 +1,461 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    /* cores */
+    --amarelo: #ffc756;
+    --laranja: #f66139;
+    --vermelho: #a72323;
+    --verde: #1f2727;
+    --cinza-claro: #d9d9d9;
+    --cinza-escuro: #959595;
+
+    /* fonte */
+    --fonte-primaria: 'PT Sans', sans-serif;
+    --fonte-secundaria: 'Quicksand', sans-serif;
+}
+
+body{
+    background-color: var(--verde);
+    font-family: var(--fonte-primaria);
+    height: 100vh;
+}
+
+.aldeias__titulo,
+.destaques, 
+.favoritos__titulo, 
+.ninja__titulo{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: var(--fonte-secundaria);
+}
+
+img{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+img:hover{
+    opacity: 0.7;
+}
+
+/* header */
+.menu{
+   background: url(../image/hokages.jpeg) no-repeat center center;
+    background-size: cover;
+    font-family: var(--fonte-secundaria);
+    font-size: 30px;
+    height: 250px;
+    padding: 0 1.5rem;
+    white-space: nowrap;
+}
+
+.menu__item a{
+    background-color: #000;
+    transition: .5s;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid var(--laranja);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.menu__item a:hover{
+    color: var(--vermelho);
+}
+
+.menu__pesquisar{
+    background-color: #000;
+    width: 250px;
+    height: 40px;
+    border: 2px solid var(--laranja);
+    border-radius: 10px;
+    color: var(--vermelho);
+}
+
+.menu__input{
+    color: var(--vermelho);
+    background-color: transparent;
+    background-image: url(../image/icone-busca.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    width: 90%;
+    line-height: 25px;
+    padding-left: 5px;
+}
+
+.menu__item:nth-child(4)::after:hover,
+.menu__item:nth-child(4)::before:hover{
+    background-color: var(--vermelho);
+}
+
+/* main */
+.principal{
+    padding: 0 1.5rem;
+}
+
+/* banner */
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover ;
+}
+
+/* aldeias */
+
+.aldeias{
+    margin-top: 1.5rem;
+}
+
+.aldeias__titulo{
+    margin-bottom: 1rem;
+    color: var(--amarelo);
+}
+
+.aldeias__lista{
+    color: #ffffff;
+    text-align: center;
+}
+
+.aldeias__item{
+    padding: 1.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.5s;
+    opacity: 1;
+    min-width: 282px;
+}
+
+.aldeias__item:hover{
+    opacity: 0.7;
+    transition: 0.7s;
+}
+
+.Konoha{
+    background: url(../image/konoha.jpeg) center center no-repeat;
+    background-size: cover;
+}
+
+.Kirigakure{
+    background: url(../image/Kirigakur.jpeg) center center no-repeat;
+    background-size: cover;
+}
+
+.Pais__do__ferro{
+    background: url(../image/País\ do\ Ferro.jpeg) center center no-repeat;
+    background-size: cover;
+}
+
+.Sunagakure{
+    background: url(../image/Sunagakure.jpeg) center center no-repeat;
+    background-size: cover;
+}
+
+.Takigakure{
+    background: url(../image/Takigakure.png) center center no-repeat;
+    background-size: cover;
+}
+
+.Kumogakre{
+    background: url(../image/Kumogakure.jpeg) center center no-repeat;
+    background-size: cover;
+}
+
+.Otogakure{
+    background: url(../image/Otogakure.png) center center no-repeat;
+    background-size: cover;
+}
+
+.Amegakure{
+    background: url(../image/Amekagure.jpeg) center center no-repeat;
+    background-size: cover;
+}
+
+.destaques{
+    padding: 30px 0 10px;
+    white-space: nowrap;
+}
+
+.destaques__titulo{
+    margin: 1rem 0;
+    color: var(--amarelo);
+}
+
+.destaques__barra{
+    width: 131px;
+    height: 2px;
+    background-color: var(--amarelo);
+}
+
+.aldeias__destaques img:last-of-type{
+    padding-left: 10px;
+}
+
+.aldeias__imagem{
+    margin-bottom: 1.5rem;
+    background: url(../image/pain.jpeg)  center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.aldeias__imagem:hover{
+    opacity: 0.7;
+}
+
+/* favoritos */
+.favoritos__titulo{
+   margin-bottom: 1rem;
+   color: var(--amarelo);
+}
+
+.favoritos__item{
+    background-color: var(--amarelo);
+    width: 400px;
+    padding: 1rem;
+    height: 500px;
+}
+
+.favoritos__item img{
+    width: 90%;
+    height: 80%;
+}
+
+.favoritos__item  h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.favoritos__item h4,
+.favoritos__item h5{
+    font-size: 16px;
+}
+
+.favoritos__item h3,
+.favoritos__item h4,
+.favoritos__item h5{
+    padding-left: 1rem;
+}
+
+.favoritos__item button{
+    outline: none;
+    border: none;
+    background-color: #000;
+    color: var(--vermelho);
+    margin-right: 1rem;
+    text-align: center;
+    padding: .5rem 0;
+    width: 80px;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 10px;
+}
+.favoritos__item button:hover,
+.ninja__feito button:hover{
+    background-color: var(--laranja);
+    color: #fff;
+}
+
+/* ninja */
+.ninja__titulo{
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--amarelo);
+}
+
+.ninja__item{
+    background-color: var(--amarelo);
+}
+
+.ninja__item img{
+    width: 70%;
+    height: 100%;
+}
+
+.ninja__item .ninja__informacoes{
+text-align: center;
+background-color: var(--cinza-escuro);
+color: var(--vermelho);
+text-transform: uppercase;
+padding-top: 1rem;
+}
+
+.ninja__informacoes h3{
+    font-size: 2rem;
+    color: var(--verde);
+}
+
+.ninja__informacoes h4,
+.ninja__informacoes h5{
+    font-size: 1rem;
+}
+
+.ninja__item .ninja__feito{
+    text-align: center;
+    padding: 1rem;
+}
+
+.ninja__feito h6{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.ninja__feito button{
+    outline: none;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding: .5rem 0;
+    width: 125px;
+    transition: .5s;
+    border-radius: 10px;
+}
+
+/* rodape */
+.rodape{
+    color: var(--cinza-claro);
+    background-color: #000;
+    margin: 1rem 0;
+    font-size: 14px;
+    font-family: var(--fonte-primaria);
+    padding: 1rem 1.5rem;
+    line-height: 2;
+    white-space: nowrap;
+}
+
+.rodape__lista{
+    width: 135px;
+}
+
+.rodape__titulo{
+    font-size: 18px;
+    font-family: var(--fonte-secundaria);
+}
+
+.rodape__logo{
+    font-size: 12px;
+}
+
+.rodape__logo h4{
+    background: url(../image/konora.png) no-repeat center;
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
+
+@media (min-width: 720px) {
+    /* header */
+    .menu{
+        height: 217px;
+    }
+
+    .menu__titulo{
+        width: auto;
+        padding: 40px 55px;
+    }
+
+    .cabecalho__seu-genkai::before{
+        padding-right: 8px;
+    }
+
+    .cabecalho__seu-genkai::after{
+        padding-left: 15px;
+    }
+
+    .menu__pesquisar{
+        width: 312px;
+    }
+
+    /* main */
+    .principal{
+        padding: 0 2.5rem;
+    }
+
+    /* aldeias */
+    .aldeias__lista{
+        height: 304px;
+    }
+
+    .destaques__barra{
+        width: 420px;
+    }
+
+    .ninja__item{
+        width: 308px;
+    }
+
+    /* rodape */
+    .rodape{
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    /* header */
+    .menu{
+        height: 100px;
+        font-size: 20px;
+        padding: 0 7.5rem;
+    }
+
+    .menu__titulo{
+        padding: 43px 55px;
+    }
+
+    .menu__pesquisar{
+        width: 384px;
+        margin-bottom: 0;
+    }
+
+    .menu__input{
+        padding-left: 15px;
+    }
+
+    /* main */
+    .principal{
+        padding: 0 7.5rem;
+    }
+
+    /* aldeias */
+    .aldeias{
+        margin-bottom: 1.5rem;
+    }
+
+    .aldeias__titulo{
+        margin-bottom: 0;
+    }
+
+    .destaques{
+        padding: 0;
+    }
+
+    .destaques .destaques__barra{
+        width: 416px;
+    }
+
+    /* favoritos */
+    .favoritos__item{
+        width: 280px;
+       
+    }
+
+    /* ninjas */
+    .ninja__item{
+        width: 330px;
+    }
+
+    /* rodape */
+    .rodape{
+        padding-left: 7.5rem;
+        padding-right: 7.5rem;
+    }
+}
